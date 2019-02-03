@@ -1,0 +1,78 @@
+1.wrapper:
+	public class Class_name{//must be Class not class and CLASS
+		public static void main(String[] args){//method must be method not Method, main must be decorate by public
+		}
+	}
+2.String class variable:
+	String v_n = "xxx";
+	String v_n = v_n.substring(start_p, end_p); Dont include end_p, len = end_p - start_p
+	String v_n = v_n.subString(start_p);start_p to end
+	String v_n = v_n0 + v_n1;
+	v_n.length() return length;
+	v_n.charAt(num)//return the numth char, not element
+	v_n.codePointCount(0, v_n.length())//return length in memory
+	String v_n = String.format("xxx %.2f", v_0)
+3.output:
+	System.out.println(v_n)"terminates current line by newline character
+	System.out.print(v_n)
+4.Arrays:
+	dst = Arrays.copyOf(ori, len)//�����ڴ�
+	Arrays.sort(ori)
+	Arrays.deepToString(ori)
+	ori_arr.length
+5.Double��
+	Double.compareTo(num1, num2);
+6.Arrays:
+	Arrays.sort(list0)
+	ArrayList<T> v_n = new ArrayList<T>();//C_n v_n = new C_n()
+	int index = v_n.indexOf(ele)//-1 not exist
+	v_n.remove(index)
+7.Thread:
+	Thread t_n = new Thread(r_n);(r_n?Runnable????????run??)
+	t_n.start()??????????????run()???????????????start???????????
+	Thread t_n = Thread.currentThread()(??????)
+	String s_n = t_n.getName()
+	Thread.sleep(int ms)
+8.Collection(iterable <- collection <- (list,set,queue)):
+import java.util.*;
+
+	Iterator<LeiXing> i_n = c_n.iterator()
+	boolean b_n = i_n.hasNext()
+	E e_n = i_n.next()
+	void = i_n.remove()//??????????????next?remove
+	for(E e_n:c_n){
+
+	}
+	i_n.forEachRemaining(e->do_something);
+	boolean b_n = c_n.add(e)
+	v_c v_n = m_n.put(k_n, v_n)
+	v_c v_n = m_n.get(k_n)
+9.List//??????????????????????????????????????
+	import java.util.*;
+
+	E_c e_n = i_n.previous()
+	boolean b_n = i_n.hasPrevious()
+	i_n.add(e_n)//加元素在迭代点后
+	
+	l_n.add(i_n, e_n)//in ist insert e_n,all element push back
+	l_n.remove(i_n)//不能连续调用两次remove
+	e_c e_n = l_n.get(i_n)
+	e_c e_n = l_n.set(i_n, e_n)
+	List<E> l_n = new LinkedList<>()//???????
+10.LinkedList://多元素使用LinkedList，少元素使用ArrayList
+	List<E> lv = new LinkedList<>();
+	boolean b_v = lv.add(e);//l_v移至e后面
+	E e = lv.remove(i)
+	E e = lv.get(i)
+	E e = lv.set(i, e)
+	int i = lv.indexOf(E e)
+	ListIterator<E> liv = lv.listIterator();//迭代点在所有元素之前,可以附加很多迭代器，但是只可以有一个可以写的迭代器
+	boolean bv = liv.hasnext()
+	E e = liv.next()
+	void v_v = li_v.set(e_v)//设置为迭代点之前的元素（之前调用next）或之后的元素（之前调用previous）
+	int i_v = li_v.nextIndex();//返回迭代点之前元素的索引值
+	int i_v = li_v.previousIndex();//返回迭代点之后元素的索引值
+11.集合：
+
+
+	
